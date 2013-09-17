@@ -33,6 +33,7 @@ default['nodejs']['npm'] = '1.3.5'
 default['nodejs']['src_url'] = "http://nodejs.org/dist"
 default['nodejs']['make_threads'] = node['cpu'] ? node['cpu']['total'].to_i : 2
 default['nodejs']['check_sha'] = true
+default['nodejs']['install_script_path'] = "/usr/local"
 
 # Set this to true to install the legacy packages (0.8.x) from ubuntu/debian repositories; default is false (using the latest stable 0.10.x)
 default['nodejs']['legacy_packages'] = false
